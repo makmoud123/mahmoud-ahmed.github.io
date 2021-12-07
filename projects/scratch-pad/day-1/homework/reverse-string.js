@@ -22,6 +22,35 @@
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
     
+      // a. Create an empty string that will collect the output
+      var newString = "";
+   
+      // b. Create the FOR loop
+
+      /* The starting point of the loop will be (str.length - 1) which corresponds to the 
+         last character of the string, "o"
+         As long as i is greater than or equals 0, the loop will go on
+         We decrement i after each iteration */
+
+         /* C. Access individual strings
+          For each iteration: i = input.length - 1 and newString = newString + input[i]
+          First iteration:    i = 5 - 1 = 4,         newString = "" + "o" = "o"
+          Second iteration:   i = 4 - 1 = 3,         newString = "o" + "l" = "ol"
+          Third iteration:    i = 3 - 1 = 2,         newString = "ol" + "l" = "oll"
+          Fourth iteration:   i = 2 - 1 = 1,         newString = "oll" + "e" = "olle"
+          Fifth iteration:    i = 1 - 1 = 0,         newString = "olle" + "h" = "olleh"
+      End of the FOR Loop*/
+      for (var i = input.length - 1; i >= 0; i--) { 
+        // d. Concatenation newString = newString + input[i];
+          newString += input[i]; 
+      }
+      
+   
+      // Return the reversed string
+      return newString; // "olleh"
+  
+   
+  reverseString('hello');
     
     
     
