@@ -14,9 +14,10 @@
  */
 function length(string) {
     // YOUR CODE BELOW HERE //
-    
 
+    return string.lenght;
 
+console.log(lenght(Hello));
     // YOUR CODE ABOVE HERE //
 }
 
@@ -26,7 +27,8 @@ function length(string) {
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
 
-
+var string = "Hello";
+toLowerCase = 
 
     // YOUR CODE ABOVE HERE //
 }

@@ -33,12 +33,6 @@ function reverseString(input) {
          We decrement i after each iteration */
 
          /* C. Access individual strings
-          For each iteration: i = input.length - 1 and newString = newString + input[i]
-          First iteration:    i = 5 - 1 = 4,         newString = "" + "o" = "o"
-          Second iteration:   i = 4 - 1 = 3,         newString = "o" + "l" = "ol"
-          Third iteration:    i = 3 - 1 = 2,         newString = "ol" + "l" = "oll"
-          Fourth iteration:   i = 2 - 1 = 1,         newString = "oll" + "e" = "olle"
-          Fifth iteration:    i = 1 - 1 = 0,         newString = "olle" + "h" = "olleh"
       End of the FOR Loop*/
       for (var i = input.length - 1; i >= 0; i--) { 
         // d. Concatenation newString = newString + input[i];
@@ -50,7 +44,7 @@ function reverseString(input) {
       return newString; // "olleh"
   
    
-  reverseString('hello');
+  console.log(reverseString('hello'));
     
     
     
